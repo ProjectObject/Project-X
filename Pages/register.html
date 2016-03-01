@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Регистрация</title>
+        <meta charset = "utf-8">
+        <link href="register_style.css" rel = stylesheet>
+        <link href="common_style.css" rel = stylesheet>
+    </head>
+    <body>
+        <div class = "registration">
+            <div class="input">
+                <label for = "e-mail">E-mail:</label>
+                <input type="text" id = "e-mail" class = "input-text">
+                <br>
+                <label for = "pass">Пароль:</label>
+                <input type="password" id = "pass" class = "input-text">
+                <br>
+                <label for = "name">Фамилия:</label>
+                <input type="text" id = "name" class = "input-text">
+                <br>
+                <label for = "second-name">Имя:</label>
+                <input type="text" id = "second-name" class = "input-text">
+                <br>
+                <label for = "third-name">Отчество:</label>
+                <input type="text" id = "third-name" class = "input-text">
+                <br><br>           
+                Пол:<input name = "sex" type = "radio" id = "male" checked> 
+                <label for = "male">М</label>
+                <input name = "sex" type = "radio" id = "female"> 
+                <label for = "male">Ж</label> 
+                <br><br>
+                <label for = "city">Город:</label>
+                <input type="text" id = "city" class = "input-text">
+                <br><br>
+                <button class = "back" onclick="location.href = 'index.html'">На главную</button>
+                <button class = "sign-up">Зарегистрироваться</button>
+            </div>
+        </div>
+    </body>
+</html>
