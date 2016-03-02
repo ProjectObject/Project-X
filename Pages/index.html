@@ -3,9 +3,7 @@
     <head>
         <title>Main</title>
         <meta charset = "utf-8">
-        <link href="main.css" rel = "stylesheet">
-        <script type="text/javascript" src="scripts.js"></script>
-        <script type="text/javascript" src="backChange.js"></script>
+        <link href="CSS/main.css" rel = "stylesheet">
     </head>
     <body>
        
@@ -16,11 +14,29 @@
         </div>
         <div class = "sign-or-log">
             <div class = "buttons">
-                <button class = "sign-in" onclick="location.href = 'register.html'">Регистрация</button>
+                <button class = "sign-up" onclick="location.href = 'register.html'">Регистрация</button>
             <br>
-                <button class = "log-in">Войти</button>
+                <button class = "log-in" onclick = "openDialog()">Войти</button>
             </div>
         </div>
-        
+        <div class="back-dialog" id="dialog"> 
+            <div class="dialog-log-in">
+                <div class="dialog-title">
+                    <span>Вход на сайт</span>
+               </div>
+               <div class = "log-in-input">
+                    <label for = "e-mail">E-mail:</label>
+                    <input type="email" id = "e-mail" class = "input-text">
+                    <br><br>
+                    <label for = "pass">Пароль:</label>
+                    <input type="password" id = "pass" class = "input-text">
+                    <br><br>
+                    <button class = "back" onclick = "closeDialog()">Назад</button>
+                    <button class = "sign-in">Вход</button>
+               </div>
+            </div>
+        </div>
+        <script src="JS/jquery-2.2.1.min.js"></script>
+        <script src="JS/dialog.js"></script>
     </body>
 </html>
