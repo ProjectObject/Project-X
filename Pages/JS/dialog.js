@@ -1,11 +1,11 @@
 $(document).ready(function(){
-        $("#dialog").hide(); //скрываем окно при загрузке страница
+        $("#dialog").hide();
     });
 
     function openDialog(){
-        $("#dialog").fadeIn(); //плавное появление блока
+        $("#dialog").fadeIn(); 
     }
 
     function closeDialog(){
-        $("#dialog").fadeOut(); //плавное исчезание блока
+        $("#dialog").fadeOut();
     }
