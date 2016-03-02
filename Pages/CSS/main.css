@@ -1,7 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(slides/slide-2.png);
+    animation: background-changer 50s infinite;
+}
+
+@keyframes background-changer {
+  0%, 100% {
+        background: #31916e;
+    }
+    25% {
+        background: #FF9800;
+    }
+    50% {
+        background: #448AFF;
+    }
+    75% {
+        background: #607D8B;
+    }
 }
 
 .logo {
