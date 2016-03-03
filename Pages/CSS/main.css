@@ -24,9 +24,9 @@ body {
 
 #volume {
     margin: 10px;
-    background: url(slides/volume_on.png);
-    width: 48px;
-    height: 48px;
+    background: url(slides/sound_on.png);
+    width: 64px;
+    height: 64px;
     border: none;
 }
 
