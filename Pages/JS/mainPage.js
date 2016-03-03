@@ -1,7 +1,7 @@
 var volume = true;
 
 $(document).ready(function(){
-        $("#dialog").hide();
+    $("#dialog").hide();
 });
 
 function openDialog(){
