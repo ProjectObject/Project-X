@@ -23,6 +23,7 @@
             <div class="dialog-log-in">
                 <div class="dialog-title">
                     <span>Вход на сайт</span>
+                    <button id = "close-dialog" onclick="closeDialog()"></button>
                </div>
                <div class = "log-in-input">
                     <label for = "e-mail">E-mail:</label>
@@ -31,7 +32,9 @@
                     <label for = "pass">Пароль:</label>
                     <input type="password" id = "pass" class = "input-text">
                     <br><br>
-                    <button class = "back" onclick = "closeDialog()">Назад</button>
+                    <input type ="checkbox" id = "stay-online">
+                    <label for = "stay-online" id = "stay">Оставаться в сети</label>
+                    <br><br>
                     <button class = "sign-in">Вход</button>
                </div>
             </div>

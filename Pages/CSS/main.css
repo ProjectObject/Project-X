@@ -127,17 +127,34 @@ body {
     padding-left: 10px;
 }
 
+#close-dialog {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url(slides/ic_clear_white_24dp_1x.png) 50% 50% no-repeat;
+    border: none;
+    transition: .3s ease-in-out background;
+}
+
+#close-dialog:hover, #close-dialog:focus {
+    background: #F44336 url(slides/ic_clear_white_24dp_1x.png) 50% 50% no-repeat;
+    cursor: pointer;
+    outline: 0;
+}
+
 .dialog-log-in {
     font-size: 1.1em;
     border-radius: 5px;
-    background-color: #ccc;
+    background: url(slides/agsquare.png);
     border-bottom: 5px solid #31916e;
     position: relative;
     overflow: hidden;
     overflow-y: auto;
     margin: 200px auto 0px auto;
     width: 450px;
-    height: 250px;
+    height: 300px;
     padding-bottom: 10px;
 }
 
@@ -155,20 +172,21 @@ body {
     background: #eee;
     color: black;
     font-size: 1.2em;
-    border: 1px solid #eee;
+    border: 2px solid #aaa;
     border-radius: 5px;
     transition: .1s linear background;
 }
 
 .input-text:focus {
+    outline: 0;
     color:white;
     background: #F57C00;
-    border: 1px solid #FF5722;
+    border: 2px solid #FF5722;
 }
 
 .sign-in{
     margin: 0 auto;
-    width: 150px;
+    width: 250px;
     height: 35px;
     background: #4CAF59;
     font-size: 1.2em;
@@ -186,22 +204,7 @@ body {
     cursor: pointer;
 }
 
-.back {
-    margin: 0 auto;
-    width: 100px;
-    height: 35px;
-    background: #607D8B;
-    font-size: 1.2em;
-    color: whitesmoke;
-    border: none;
-    border-bottom: 5px solid #455A64;
-    border-radius: 3px;
-    transition: .3s ease-in-out all;
-}
-
-.back:hover {
-    background: #F57C00;
-    border-bottom-color: #FF5722;
-    color: white;
-    cursor: pointer;
+#stay-online {
+    width: 15px;
+    height: 15px;
 }

@@ -1,4 +1,4 @@
-var volume = false;
+var volume = true;
 
 $(document).ready(function(){
         $("#dialog").hide();
@@ -13,7 +13,7 @@ function closeDialog(){
 }
 
 function switchVolume() {
-    if(volume) {
+    if(!volume) {
          $("#video-background").prop('muted', false);
          $("#volume").css("background", "url(CSS/slides/volume_on.png)");
         volume = !volume;
@@ -23,5 +23,7 @@ function switchVolume() {
         volume = !volume;
     }
 }
+
+
 
 
