@@ -6,7 +6,7 @@
         <link href="CSS/main.css" rel = "stylesheet">
     </head>
     <body>
-        <video autoplay loop id="video-background" muted>
+        <video autoplay loop id="video-background">
           <source src="CSS/slides/moscow.mp4" type="video/mp4">
         </video>
         <div class = "logo">       
@@ -36,6 +36,7 @@
                </div>
             </div>
         </div>
+        <button id = "volume" onclick="switchVolume()"></button>
         <script src="JS/jquery-2.2.1.min.js"></script>
         <script src="JS/mainPage.js"></script>
     </body>
