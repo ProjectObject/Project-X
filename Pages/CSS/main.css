@@ -4,9 +4,10 @@ body {
   background: #333;
   background-attachment: fixed;
   background-size: cover;
+  background: #B6B6B6;
 }
 
-/*Предыдущая анимация цветов
+/*анимация цветов на фоне
 @keyframes background-changer {
   0%, 100% {
         background: #31916e;
@@ -22,30 +23,6 @@ body {
     }
 }*/
 
-#volume {
-    margin: 10px;
-    background: url(slides/sound_on.png);
-    width: 64px;
-    height: 64px;
-    border: none;
-}
-
-#volume:focus {
-    border: 0;
-    outline: 0;
-}
-
-#video-background {
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
-}
-
 .logo {
     left: 50%;
     width: 300px;
@@ -55,6 +32,38 @@ body {
     text-align: center;
     margin-left:  -150px;
     border: 3px solid 
+}
+
+.new-events {
+    position: fixed;
+    top: 50%;
+    margin-top: -210px;
+    width: 220px;
+    height: 420px;
+    border-left: none;
+}
+
+.new-events-head {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    width: inherit - 20px;
+    height: 20px;
+    background: #536DFE;
+    border-top-right-radius: 10px;
+}
+
+.new-events-content {
+    padding: 15px;
+    width: inherit - 30px;
+    height: 330px;
+    overflow: auto;
+    background: #FFE0B2;
+    border-bottom-right-radius: 10px;
+    border: 3px solid #536DFE;
+    border-top: none;
+    border-left: none;
 }
 
 .sign-or-log {
