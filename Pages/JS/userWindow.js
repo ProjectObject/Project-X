@@ -28,7 +28,7 @@ var showSearchWindow = function() {
 	currentWindow.css("display" , "block");
 	currentWindow.animate({
 		'top' : '0px',
-	})
+	}, animationTime)
 	$(".event-buttons").hide();
 	$(".find-event-button").fadeIn(animationTime);
 }
@@ -38,7 +38,7 @@ var showCreateWindow = function() {
 	currentWindow.css("display" , "block");
 	currentWindow.animate({
 		'top' : '0px',
-	})
+	}, animationTime)
 	$(".event-buttons").hide();
 	$(".create-event-button").fadeIn(animationTime);
 }
