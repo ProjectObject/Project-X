@@ -32,21 +32,6 @@ body {
 .slide-content {
     width: 100%;
 }
-/*анимация цветов на фоне
-@keyframes background-changer {
-  0%, 100% {
-        background: #31916e;
-    }
-    25% {
-        background: #FF9800;
-    }
-    50% {
-        background: #448AFF;
-    }
-    75% {
-        background: #607D8B;
-    }
-}*/
 
 .logo {
     left: 50%;
@@ -60,7 +45,6 @@ body {
 }
 
 .new-events {
-    position: fixed;
     top: 50%;
     margin-top: -210px;
     width: 220px;

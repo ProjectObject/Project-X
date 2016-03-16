@@ -10,20 +10,30 @@
 		<div class="logo"></div>
 		<button class="exit">Выход</button>
 	</div>
-	<div class="new-events">
-        <div class="new-events-head">Новые события</div>
-        <div class="new-events-content"></div>
-    </div>
+		<div class="new-events">
+			<button class="handle">События</button>
+			<div class="new-events-head">Новые события</div>
+		    <div class="new-events-content"></div>
+		</div>
 	<div class="user-window">
+		<div class="search">
+			<button class="back" onclick="showUserInformation()">Назад</button>
+		</div>
+		<div class="create">
+			<button class="back" onclick="showUserInformation()">Назад</button>
+		</div>
 		<div class="user-information"></div>
 		<div class="user-events">
 			<div class="event-buttons">
-				<button class="create-event">Создать событие</button>
-				<button class="find-event">Найти событие</button>
+				<button class="create-event" onclick="showCreateWindow()">Создать событие</button>
+				<button class="find-event" onclick="showSearchWindow()">Найти событие</button>
 			</div>
 			<hr>
 		</div>
 	</div>
 	<div class="footer"></div>
+	<script src="JS/jquery-2.2.1.min.js"></script>
+	<script src="JS/jquery.tabslideout.v1.2.js" type="text/javascript"></script>	
+	<script type="text/javascript" src="JS/userWindow.js"></script>
 </body>
 </html>
