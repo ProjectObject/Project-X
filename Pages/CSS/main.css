@@ -45,6 +45,7 @@ body {
 }
 
 .new-events {
+    position: absolute;
     top: 50%;
     margin-top: -210px;
     width: 220px;

@@ -1,31 +1,46 @@
 var currentWindow;
+var animationTime = 500;
 
 $(document).ready(function() {
 	currentWindow = $(".user-information");
 	$(".search").hide();
 	$(".create").hide();
+	$(".find-event-button").hide();
+	$(".create-event-button").hide();
+	$(".search").css("top", "-300px");
+	$(".create").css("top", "-300px");
 });
 
 
 var showUserInformation = function() {
-	$.when(currentWindow.slideUp(500)).then(function() {
-		currentWindow = $(".user-information");
-		currentWindow.slideDown(500);
-	})
+	$(".create-event-button").hide();
+	$(".find-event-button").hide();
+	$(".event-buttons").fadeIn(animationTime);
+	$.when(currentWindow.animate({
+		'top' : '-300px'
+	})).done(function() {
+		currentWindow.css("display", "none");
+	});
 }
 
 var showSearchWindow = function() {
-		$.when(currentWindow.slideUp(500)).then(function() {
-			currentWindow = $(".search");
-			currentWindow.slideDown(500);
-		})
+	currentWindow = $(".search");
+	currentWindow.css("display" , "block");
+	currentWindow.animate({
+		'top' : '0px',
+	})
+	$(".event-buttons").hide();
+	$(".find-event-button").fadeIn(animationTime);
 }
 
 var showCreateWindow = function() {
-	$.when(currentWindow.slideUp(500)).then(function() {
-		currentWindow = $(".create");
-		currentWindow.slideDown(500);
+	currentWindow = $(".create");
+	currentWindow.css("display" , "block");
+	currentWindow.animate({
+		'top' : '0px',
 	})
+	$(".event-buttons").hide();
+	$(".create-event-button").fadeIn(animationTime);
 }
 
 $(function(){
