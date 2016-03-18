@@ -1,4 +1,5 @@
 var currentWindow;
+var showNewEvents = true;
 var animationTime = 500;
 
 $(document).ready(function() {
