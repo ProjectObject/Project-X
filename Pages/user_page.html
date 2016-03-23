@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="CSS/user_page.css">
 	<link rel="stylesheet" type="text/css" href="CSS/scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="CSS/event.css">
 	<script src="JS/jquery-2.2.1.min.js"></script>
 	<script src="JS/jquery.tabslideout.v1.2.js" type="text/javascript"></script>	
-	<script type="text/javascript" src="JS/userWindow.js"></script>
+	<script src="JS/userWindow.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="header">
@@ -33,7 +34,28 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
-		<div class="user-information"></div>
+		<div class="user-information">
+			<div class="user-pic">
+				<div class="picture-field">
+					<img class="user-picture" src="CSS/slides/user.jpg" onclick="dialogPhotoShow()">
+				</div>
+				<div class="picture-redact"></div>
+			</div>
+			<div class="user-info">
+				<h2 class="name">Махмуд Череззабороногозадерищенский</h2>
+				<br><hr>
+				<p class="city info-field">Город: <span id="user-city">Челяба</span></p>
+				<p class="born info-field">Дата рождения: <span id="user-born">28.01.2007</span></p>
+				<p class="info-field">...</p>
+				<p class="info-field">...</p>
+				<p class="info-field">...</p>
+				<p class="interests info-field">Интересы:</p>
+				<hr>
+				<div class="redact-profile">
+					<button>Редактировать профиль</button>
+				</div>
+			</div>
+		</div>
 		<div class="user-events">
 			<div class="event-buttons">
 				<button class="create-event" onclick="showCreateWindow()">Создать событие</button>
@@ -47,10 +69,75 @@
 			</div>
 			<hr>
 			<div class="event-history">
-				<div class="event"></div>
+				<div class="event" onclick="alert('loh');">
+					<div class="event-pic"></div>
+					<h1>Заголовок события</h1>
+					<div class="event-description">
+						<p>Небольшая инфа о событии</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div> 
+				<div class="event" onclick="alert('loh');">
+					<div class="event-pic"></div>
+					<h1>Заголовок события</h1>
+					<div class="event-description">
+						<p>Небольшая инфа о событии</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div> 
+				<div class="event" onclick="alert('loh');">
+					<div class="event-pic"></div>
+					<h1>Заголовок события</h1>
+					<div class="event-description">
+						<p>Небольшая инфа о событии</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div> 
+				<div class="event" onclick="alert('loh');">
+					<div class="event-pic"></div>
+					<h1>Заголовок события</h1>
+					<div class="event-description">
+						<p>Небольшая инфа о событии</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div> 
+				<div class="event" onclick="alert('loh');">
+					<div class="event-pic"></div>
+					<h1>Заголовок события</h1>
+					<div class="event-description">
+						<p>Небольшая инфа о событии</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div> 
 			</div>
 		</div>
+		<div class="footer"></div>
 	</div>
-	<div class="footer"></div>
-</body>
+	<div id="up"><img alt="Наверх" id="image-up" src="CSS/slides/up.png"></div>
+	</body>
 </html>

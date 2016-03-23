@@ -4,6 +4,7 @@
         <title>Main</title>
         <meta charset = "utf-8">
         <link href="CSS/main.css" rel = "stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/Dialog.css">
         <script src="JS/jquery-2.2.1.min.js"></script>
         <script src="JS/mainPage.js"></script>
     </head>
@@ -17,29 +18,61 @@
         </div>
         <div class = "sign-or-log">
             <div class = "buttons">
-                <button class = "sign-up" onclick="location.href = 'register.html'">Регистрация</button>
+                <button class = "sign-up" onclick="openDialogRegister()">Регистрация</button>
             <br>
-                <button class = "log-in" onclick = "openDialog()">Войти</button>
+                <button class = "log-in" onclick = "openDialogLogIn()">Войти</button>
             </div>
         </div>
-        <div class="back-dialog" id="dialog"> 
+        <div class="back-dialog" id="dialog-log-in"> 
             <div class="dialog-log-in">
                 <div class="dialog-title">
                     <span>Вход на сайт</span>
-                    <button id = "close-dialog" onclick="closeDialog()"></button>
+                    <button id = "close-dialog" onclick="closeDialogLogIn()"></button>
                </div>
-               <form>
+               <form action="core/auth.os?action=login" method="POST">
                <div class = "log-in-input">
-                    <label for = "e-mail">E-mail:</label>
-                    <input type="email" id = "e-mail" class = "input-text" required>
-                    <br><br>
-                    <label for = "pass">Пароль:</label>
-                    <input type="password" id = "pass" class = "input-text" required>
+                    <label for = "login">Логин:</label>
+                    <input type="text" id = "user-name" name="username" class = "input-text" required>
+                    <br>                    <label for = "pass">Пароль:</label>
+                    <input type="password" id = "pass" name="password" class = "input-text" required>
                     <br><br>
                     <input type ="checkbox" id = "stay-online">
                     <label for = "stay-online" id = "stay">Оставаться в сети</label>
                     <br><br>
                     <input type="submit" value="Вход" class="sign-in">
+               </div>
+               </form>
+            </div>
+        </div>
+        <div class="back-dialog" id="dialog-register"> 
+            <div class="dialog-register">
+                <div class="dialog-title">
+                    <span>Регистрация</span>
+                    <button id = "close-dialog" onclick="closeDialogRegister()"></button>
+               </div>
+               <form action="core/register.os" method="POST">
+               <div class = "register-input">
+                    <label for = "login">Логин:</label>
+                    <input type="login" id = "user-name" name="username" class = "input-text" required>
+                    <br>
+                    <label for = "e-mail">E-mail:</label>
+                    <input type="e-mail" id = "email" name="email" class = "input-text" required>
+                    <br>
+                    <label for = "pass">Пароль:</label>
+                    <input type="password" id = "pass" name="password" class = "input-text" required>
+                    <br>
+                    <label for = "repeat-pass">Повторите пароль:</label>
+                    <input type="password" id = "repeat-pass" name="password_repeat" class = "input-text" required>
+                    <br>
+                    <label for = "name">Имя:</label>
+                    <input type="text" id = "name" name="name" class = "input-text" required>
+                    <br>
+                    <label for = "surname">Фамилия:</label>
+                    <input type="text" id = "surname" name="second_namere" class = "input-text" required>
+                    <br>
+                    Пол:<input type="radio" name="sexgroup" value="1" checked/>Муж. 
+                    <input type="radio" name="sexgroup" value="0" />Жен.<br>
+                    <input type="submit" value="Зарегестрироваться" class="sign-in">
                </div>
                </form>
             </div>

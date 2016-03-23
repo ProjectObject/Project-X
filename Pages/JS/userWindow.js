@@ -1,17 +1,30 @@
 var currentWindow;
 var showNewEvents = true;
-var animationTime = 500;
+var animationTime = 600;
+var height;
+var width;
 
 $(document).ready(function() {
+	setPicture('.user-picture');
 	currentWindow = $(".user-information");
+	$('.back-dialog').hide();
 	$(".search").hide();
 	$(".create").hide();
 	$(".find-event-button").hide();
 	$(".create-event-button").hide();
 	$(".search").css("top", "-300px");
 	$(".create").css("top", "-300px");
+	$('#image-up').click( function(){
+		window.scroll(0 ,0); 
+	});
+	$(window).scroll(function(){
+		if ($(document).scrollTop() > 0 ) {
+			$('#up').fadeIn(animationTime/2);
+		} else {
+			$('#up').fadeOut(animationTime/2);
+		}
+	});
 });
-
 
 var showUserInformation = function() {
 	$(".create-event-button").hide();
@@ -57,3 +70,23 @@ $(function(){
 		fixedPosition: true				
 	});
 });
+
+/****** Кнопка перемещения наверх ************/
+
+
+/****** Установка пропрций аватарки пользователя *************/
+
+function setPicture(cl) {
+	var mainSide;
+	var isWidth;
+	if($(cl).width() > $(cl).height()) {
+		mainSide = $(cl).height();
+		isWidth = false;
+	} else {
+		mainSide = $(cl).width();
+		isWidth = true;
+	}
+	$(cl).css(isWidth ? 'width' : 'height', '160px');
+}
+
+/************ Появление/исчезновение диалога с полной пользовательской фоткой ***************/

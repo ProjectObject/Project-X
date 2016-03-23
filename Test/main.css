@@ -3,66 +3,31 @@
 	padding: 0;
 }
 
-::-webkit-scrollbar{
-    width:12px;
-}
-
-::-webkit-scrollbar-thumb{
-    border-width:1px 1px 1px 2px;
-    border-color: #777;
-    background-color: #2196F3;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    border-width: 1px 1px 1px 2px;
-    border-color: #555;
-    background-color: #1976D2;
-}
-
-::-webkit-scrollbar-track{
-    border-width:0;
-}
-
-::-webkit-scrollbar-track:hover{
-    border-left: solid 1px #aaa;
-    background-color: #eee;
-}
-
-.event {
-	margin: 200px;
-	position: absolute;
-	width: 710px;
-	height: 150px;
-	padding: 10px;
+body {
 	background: #eee;
-	border: 3px solid #666;
-	border-radius: 10px;
-	text-align: center;
 }
 
-.event:hover {
-	background: #FFE0B2;
-	cursor: pointer;
+.picture {
+	position: absolute;
+	overflow: hidden;
+	left: 40%;
+	top: 30%;
+	width: 200px;
+	height: 200px;
+	background: #555;
+	border-radius: 5px;
 }
 
-.event-pic {
-	float: left;
-	height: 150px;
-	width: 150px;
-	background: url(shavuha1.jpg);
+.dialog-picture {
+	position: absolute;
 }
 
-.event-description {
-	border-top: 3px solid #777;
-	border-bottom: 3px solid #777;
-	padding: 10px 0px;
-	text-align: left;
-	overflow: auto;
-	position: relative;
-	float: right;
-	height: 80px;
-	width: 550px;
+.back-dialog {
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    z-index: 100;
 }
 
-.learn-more {
-}

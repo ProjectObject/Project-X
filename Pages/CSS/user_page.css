@@ -1,3 +1,4 @@
+/******************* Страница пользователя *****************/
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ body {
     top: 0px;
     width: 100%;
     height: 60px;
-    background: #999;
+    background: #444;
     z-index: 100;
 }
 
@@ -82,7 +83,70 @@ label {
 .user-information {
     width: 100%;
     height: 300px;
-    background: #4CAF50;
+    background: #555;
+    color: black;
+}
+
+.user-pic {
+    float: left;
+    height: 280px;
+    width: 180px;
+    background: #999;
+    padding: 10px;
+}
+
+.picture-field {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 160px;
+    height: 160px;
+    background: #000;
+    overflow: hidden;
+    cursor: pointer;   
+}
+
+
+.picture-redact {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 160px;
+    height: 50px;
+    background: #333;
+}
+
+.user-info {
+    float: right;
+    height: 280px;
+    width: 580px;
+    background: #bbb;
+    padding: 10px;
+}
+
+.name {
+    margin-top: 20px;
+}
+
+.info-field {
+    padding-left: 20px;
+    margin-top: 5px;
+    width: 250px;
+    background: #fff;
+}
+
+.interests {
+    display: block;
+    width: 560px;
+    height: 50px;
+}
+
+.redact-profile {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.redact-profile button {
+    width: 200px;
+    height: 30px;
 }
 
 .search {
@@ -105,15 +169,14 @@ label {
 
 .user-events {
     width: 100%;
-    height: 630px;
     background: #1976D2;
 }
 
 .event-history {
+    padding-bottom: 150px;
     width: 100%;
-    height: 500px;
-    padding: 50px;
-    overflow: auto;
+    min-height: 200px;
+    height: auto;
 }
 
 .event {
@@ -179,6 +242,7 @@ label {
     height: 60px;
     text-align: center;
     padding-top: 30px;
+    background: #607D8B;
 }
 
 .find-event-button {
@@ -186,6 +250,7 @@ label {
     height: 60px;
     text-align: center;
     padding-top: 30px;
+    background: #F44336;
 }
 
 .bfind {
@@ -210,10 +275,32 @@ label {
     margin-left: 20px;
 }
 
+/******* Подвал ***************/
 .footer {
-    position: absolute;
-    top: 990px;
     height: 70px;
     width: 100%;
     background: #333;
 }
+
+/************** Стиль кнопки поднятия наверх ***********************/
+
+#up {
+    position: fixed; 
+    border-radius: 5px; 
+    opacity: 0.8;
+    right: 10px; 
+    top: 80px; 
+    display: none; 
+    cursor: pointer;
+}
+
+#up:hover {
+    opacity: 1;
+}
+
+#image-up {
+    width: 64px;
+    height: 64px;
+}
+/************** Диалог с полной картинкой пользователя *****************/
+
