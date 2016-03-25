@@ -1,26 +1,23 @@
 /*********** Диалог входа на сайт ***********************/
 
 .back-dialog {
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
     z-index: 100;
 }
-
 .dialog-title {
     background-color: #31916e;
     color: white;
     text-align: center;
     height: 30px;
 }
-
 .dialog-title span {
     font-size: 25px;
     padding-left: 10px;
 }
-
 #close-dialog {
     position: absolute;
     right: 0;
@@ -31,13 +28,12 @@
     border: none;
     transition: .3s ease-in-out background;
 }
-
-#close-dialog:hover, #close-dialog:focus {
+#close-dialog:hover,
+#close-dialog:focus {
     background: #F44336 url(slides/ic_clear_white_24dp_1x.png) 50% 50% no-repeat;
     cursor: pointer;
     outline: 0;
 }
-
 .dialog-log-in {
     font-size: 1.1em;
     border-radius: 5px;
@@ -51,12 +47,10 @@
     height: 300px;
     padding-bottom: 10px;
 }
-
 .log-in-input {
     text-align: center;
     margin-top: 50px;
 }
-
 .input-text {
     padding-left: 5px;
     background: #eee;
@@ -66,15 +60,13 @@
     border-radius: 5px;
     transition: .1s linear background;
 }
-
 .input-text:focus {
     outline: 0;
-    color:white;
+    color: white;
     background: #F57C00;
     border: 2px solid #FF5722;
 }
-
-.sign-in{
+.sign-in {
     margin: 0 auto;
     width: 250px;
     height: 35px;
@@ -86,44 +78,36 @@
     border-radius: 3px;
     transition: .4s ease-in-out all;
 }
-
 .sign-in:hover {
     background: #F57C00;
     border-bottom-color: #FF5722;
     color: white;
     cursor: pointer;
 }
-
 #stay-online {
     width: 15px;
     height: 15px;
 }
-
-
 /**************** Диалог регистрации ***********************/
 
 .back-dialog {
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
     z-index: 100;
 }
-
-
 .dialog-title {
     background-color: #31916e;
     color: white;
     text-align: center;
     height: 30px;
 }
-
 .dialog-title span {
     font-size: 25px;
     padding-left: 10px;
 }
-
 #close-dialog {
     position: absolute;
     right: 0;
@@ -134,14 +118,12 @@
     border: none;
     transition: .3s ease-in-out background;
 }
-
-#close-dialog:hover, #close-dialog:focus {
+#close-dialog:hover,
+#close-dialog:focus {
     background: #F44336 url(slides/ic_clear_white_24dp_1x.png) 50% 50% no-repeat;
     cursor: pointer;
     outline: 0;
 }
-
-
 .dialog-register {
     font-size: 1.1em;
     border-radius: 5px;
@@ -155,30 +137,24 @@
     height: 400px;
     padding-bottom: 10px;
 }
-
 .register-input {
     margin-top: 20px;
     text-align: center;
 }
-
 #repeat-pass {
     margin-right: 60px;
 }
-
 .log-in-input {
     text-align: center;
     margin-top: 50px;
 }
-
-
 .input-text:focus {
     outline: 0;
-    color:white;
+    color: white;
     background: #F57C00;
     border: 2px solid #FF5722;
 }
-
-.sign-in{
+.sign-in {
     margin: 0 auto;
     width: 250px;
     height: 35px;
@@ -190,48 +166,38 @@
     border-radius: 3px;
     transition: .4s ease-in-out all;
 }
-
 .sign-in:hover {
     background: #F57C00;
     border-bottom-color: #FF5722;
     color: white;
     cursor: pointer;
 }
-
 #stay-online {
-    width-register
-    height: 15px;
+    width-register height: 15px;
 }
-
 /************* Выравнивание строк по центру в обоих диалогах ******************/
+
 .input-text {
     margin-top: 10px;
 }
-
 #surname {
     margin-bottom: 15px;
 }
-
 label[for="login"] {
     margin-left: 27px;
 }
-
 label[for="e-mail"] {
     margin-left: 25px;
 }
-
 label[for="pass"] {
     margin-left: 20px;
 }
-
 label[for="name"] {
     margin-left: 43px;
 }
-
 label[for="surname"] {
     margin-left: 7px;
 }
-
 input[value="Зарегестрироваться"] {
     margin-top: 15px;
 }

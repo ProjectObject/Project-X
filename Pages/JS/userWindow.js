@@ -7,11 +7,7 @@ var width;
 $(document).ready(function() {
 	setPicture('.user-picture');
 	currentWindow = $(".user-information");
-	$('.back-dialog').hide();
-	$(".search").hide();
-	$(".create").hide();
-	$(".find-event-button").hide();
-	$(".create-event-button").hide();
+	hide();
 	$(".search").css("top", "-300px");
 	$(".create").css("top", "-300px");
 	$('#image-up').click( function(){
@@ -27,14 +23,20 @@ $(document).ready(function() {
 });
 
 var showUserInformation = function() {
-	$(".create-event-button").hide();
-	$(".find-event-button").hide();
-	$(".event-buttons").fadeIn(animationTime);
-	$.when(currentWindow.animate({
-		'top' : '-300px'
-	})).done(function() {
-		currentWindow.css("display", "none");
-	});
+	window.scroll(0, 0);
+	if(!currentWindow.hasClass("user-information")) {
+		$(".create-event-button").hide();
+		$(".find-event-button").hide();
+		$(".event-buttons").fadeIn(animationTime);
+		$.when(currentWindow.animate({
+			'top' : '-300px'
+		})).done(function() {
+			currentWindow.css("display", "none");
+		});
+		$(".search-result").hide();
+		$(".creation").hide();
+		$(".event-history").fadeIn(animationTime);
+	}
 }
 
 var showSearchWindow = function() {
@@ -44,6 +46,8 @@ var showSearchWindow = function() {
 		'top' : '0px',
 	}, animationTime)
 	$(".event-buttons").hide();
+	$(".event-history").hide();
+	$(".search-result").fadeIn(animationTime);
 	$(".find-event-button").fadeIn(animationTime);
 }
 
@@ -54,6 +58,8 @@ var showCreateWindow = function() {
 		'top' : '0px',
 	}, animationTime)
 	$(".event-buttons").hide();
+	$(".event-history").hide();
+	$(".creation").fadeIn(animationTime);
 	$(".create-event-button").fadeIn(animationTime);
 }
 
@@ -71,7 +77,15 @@ $(function(){
 	});
 });
 
-/****** Кнопка перемещения наверх ************/
+function hide() {
+	$('.back-dialog').hide();
+	$(".search").hide();
+	$(".create").hide();
+	$(".find-event-button").hide();
+	$(".create-event-button").hide();
+	$(".search-result").hide();
+	$(".creation").hide();
+}
 
 
 /****** Установка пропрций аватарки пользователя *************/

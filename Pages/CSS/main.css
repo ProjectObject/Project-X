@@ -2,36 +2,29 @@
     margin: 0;
     padding: 0;
 }
-
-
-body, html {
-    width: 100%
-    height: 100%;
+body,
+html {
+    width: 100% height: 100%;
 }
-
 body {
     background: #333;
     background-attachment: fixed;
     background-size: cover;
     background: #607D8B;
 }
-
 .slider {
     background-color: #607D8B;
     width: 100%;
     height: 100%;
     position: fixed;
 }
-
 .slide {
     width: 100%;
     height: 100%;
 }
-
 .slide-content {
     width: 100%;
 }
-
 .logo {
     left: 50%;
     width: 300px;
@@ -39,10 +32,9 @@ body {
     position: absolute;
     color: white;
     text-align: center;
-    margin-left:  -150px;
-    border: 3px solid 
+    margin-left: -150px;
+    border: 3px solid
 }
-
 .new-events {
     position: absolute;
     top: 50%;
@@ -52,7 +44,6 @@ body {
     border-left: none;
     z-index: 2;
 }
-
 .new-events-head {
     padding: 10px;
     text-align: center;
@@ -63,7 +54,6 @@ body {
     background: #536DFE;
     border-top-right-radius: 10px;
 }
-
 .new-events-content {
     padding: 15px;
     width: inherit - 30px;
@@ -76,11 +66,9 @@ body {
     opacity: 0.7;
     transition: .4s ease-in-out opacity;
 }
-
 .new-events-content:hover {
     opacity: 1;
 }
-
 .sign-or-log {
     top: 50%;
     left: 50%;
@@ -91,7 +79,6 @@ body {
     margin-left: -150px;
     z-index: 1;
 }
-
 .sign-up {
     margin: 0 auto;
     width: 300px;
@@ -104,14 +91,12 @@ body {
     border-radius: 3px;
     transition: .4s ease-in-out all;
 }
-
 .sign-up:hover {
     background: #F57C00;
     border-bottom-color: #FF5722;
     color: white;
     cursor: pointer;
 }
-
 .log-in {
     margin-top: 10px;
     width: 300px;
@@ -124,14 +109,12 @@ body {
     border-radius: 3px;
     transition: .4s ease-in-out all;
 }
-
 .log-in:hover {
     background: #F57C00;
     border-bottom-color: #FF5722;
     color: white;
     cursor: pointer;
 }
-
 .slide-content {
     width: 100%;
     height: 100%;
@@ -141,8 +124,4 @@ body {
     background-size: cover;
     background-position: 50% 50%;
 }
-
-
-
 /***************** Диалог регистрации ************************/
-
